@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Build a personalized Voyara itinerary around your island, dates, pace and interests.">
+  <title>Personalized Itineraries | Voyara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=favorites2">
+  <link rel="stylesheet" href="prototype.css?v=influencers2">
+  <link rel="stylesheet" href="personalized-itineraries.css?v=1">
+  <script src="prototype.js?v=favorites2" defer></script>
+  <script src="personalized-itineraries.js?v=1" defer></script>
+</head>
+<body class="prototype-page personalized-page">
+  <header class="header">
+    <a class="brand" href="index.html"><img src="assets/voyara-logo.png" alt="Voyara"></a>
+    <button class="menu-button" type="button" aria-label="Toggle navigation">☰</button>
+    <nav class="nav"><a href="discover.html">Discover</a><a href="things-to-do.html">Things to Do</a><a href="events.html">Featured Events</a><a class="active" href="personalized-itineraries.html">Itineraries</a><a href="voyagers.html">Voyagers</a></nav>
+    <div class="header-actions"><button class="line-icon-button" type="button"><span class="heart-icon">♡</span></button><a class="line-icon-button" href="itineraries.html"><span class="bag-icon"></span></a><button class="avatar-button"><img src="assets/header-avatar.png" alt=""></button><button class="account-chevron">⌄</button></div>
+  </header>
+
+  <main>
+    <section class="personalized-hero">
+      <div class="page-shell personalized-hero-grid">
+        <div><p class="eyebrow">BUILT AROUND YOU</p><h1>Your Bahamas trip,<br><em>personally mapped.</em></h1><p>Tell Voyara how you travel. We’ll shape the right pace, experiences and island stops into one bookable plan.</p></div>
+        <div class="personalized-preview" aria-label="Example personalized itinerary"><span>YOUR MATCH</span><strong id="match-score">94%</strong><p id="preview-title">Nassau · Balanced Explorer</p><small id="preview-meta">3 days · Food, water and local culture</small></div>
+      </div>
+    </section>
+
+    <section class="page-shell itinerary-builder-shell">
+      <form class="itinerary-builder" id="personalized-form">
+        <div class="builder-heading"><span>01</span><div><h2>Tell us about your trip</h2><p>Your choices update the recommended plan instantly.</p></div></div>
+        <div class="builder-grid">
+          <label>Island<select name="island"><option>Nassau</option><option>Exuma</option><option>Eleuthera</option><option>Paradise Island</option></select></label>
+          <label>Trip length<select name="days"><option value="1">1 day</option><option value="3" selected>3 days</option><option value="5">5 days</option><option value="7">7 days</option></select></label>
+          <label>Travel style<select name="style"><option value="balanced">Balanced explorer</option><option value="adventure">Adventure first</option><option value="relaxed">Slow and relaxed</option><option value="culture">Food and culture</option></select></label>
+          <label>Who’s travelling?<select name="group"><option>Couple</option><option>Friends</option><option>Family</option><option>Solo</option></select></label>
+        </div>
+        <fieldset><legend>What should we prioritize?</legend><div class="interest-chips"><label><input type="checkbox" name="interest" value="Beaches" checked><span>Beaches</span></label><label><input type="checkbox" name="interest" value="Food" checked><span>Food</span></label><label><input type="checkbox" name="interest" value="Water adventures" checked><span>Water adventures</span></label><label><input type="checkbox" name="interest" value="Culture"><span>Culture</span></label><label><input type="checkbox" name="interest" value="Nightlife"><span>Nightlife</span></label><label><input type="checkbox" name="interest" value="Wellness"><span>Wellness</span></label></div></fieldset>
+        <button class="primary-action builder-submit" type="submit">Save my preferences</button>
+      </form>
+
+      <section class="personalized-result" aria-live="polite">
+        <div class="builder-heading"><span>02</span><div><p class="eyebrow">YOUR RECOMMENDED PLAN</p><h2 id="result-title">Nassau Balanced Escape</h2><p id="result-summary">A three-day mix of water, flavour and unhurried island time.</p></div></div>
+        <div class="personalized-days" id="personalized-days">
+          <article><span>DAY 1</span><h3>Settle into Nassau</h3><p>Local breakfast → Old Town walk → sunset dinner</p><a href="things-to-do.html?q=nassau">Explore day</a></article>
+          <article><span>DAY 2</span><h3>Out on the water</h3><p>Reef snorkel → Rose Island lunch → beach afternoon</p><a href="things-to-do.html?q=water">Explore day</a></article>
+          <article><span>DAY 3</span><h3>Make it yours</h3><p>Market tasting → flexible favourite → farewell cocktails</p><a href="favorites.html">Use favourites</a></article>
+        </div>
+        <div class="result-actions"><a href="itineraries.html">Browse ready-made itineraries</a><button class="primary-action" type="button" id="build-plan">Build this itinerary</button></div>
+      </section>
+    </section>
+  </main>
+  <button class="prototype-notice" id="prototype-notice" hidden></button>
+  <footer class="prototype-footer"><div class="page-shell footer-grid"><div><h3>Voyara Itineraries</h3><p>Personalized island plans powered by your preferences.</p></div><div><h3>Explore</h3><a href="discover.html">Discover</a></div><div><h3>Saved</h3><a href="favorites.html">Favourites</a></div><div><h3>Trips</h3><a href="profile.html">My Trips</a></div></div></footer>
+</body>
+</html>

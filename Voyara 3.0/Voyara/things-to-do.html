@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Experiences in The Bahamas | Voyara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=favorites2">
+  <link rel="stylesheet" href="prototype.css?v=hearts4">
+  <script src="prototype.js?v=favorites2" defer></script>
+</head>
+<body class="prototype-page results-page">
+  <header class="header">
+    <a class="brand" href="index.html"><img src="assets/voyara-logo.png" alt="Voyara"></a>
+    <button class="menu-button">☰</button>
+    <nav class="nav"><a class="active" href="index.html">Discover</a><a href="events.html">Featured Events</a><a href="itineraries.html">Itineraries</a><a href="voyagers.html">Voyagers</a></nav>
+    <div class="header-actions"><a class="line-icon-button" href="#search"><span class="search-icon"></span></a><button class="line-icon-button"><span class="heart-icon">♡</span></button><a class="line-icon-button" href="itineraries.html"><span class="bag-icon"></span></a><button class="avatar-button"><img src="assets/header-avatar.png" alt=""></button><button class="account-chevron">⌄</button></div>
+  </header>
+
+  <main>
+    <div class="page-shell results-shell">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>›</span><a href="index.html">The Bahamas</a><span>›</span><span>Experiences</span></nav>
+      <div class="results-title-row">
+        <div><p class="eyebrow">CURATED BY LOCALS & TRAVELERS</p><h1>Nassau experiences, tours & events</h1><p>Book standout island moments recommended by the Voyara community.</p></div>
+        <div class="results-trust"><strong>4.8 ★</strong><span>from 18K+ traveler reviews</span></div>
+      </div>
+
+      <section class="results-search-band" id="search" aria-label="Search experiences">
+        <label class="results-search-main"><span>What are you looking for?</span><input id="page-search" type="search" placeholder="Beach clubs, boat tours, dining..."></label>
+        <label><span>Where?</span><select id="island-filter"><option value="all">All islands</option><option value="nassau" selected>Nassau</option><option value="exuma">Exuma</option><option value="eleuthera">Eleuthera</option></select></label>
+        <label><span>When?</span><input type="date" aria-label="Experience date"></label>
+        <label><span>Travelers</span><select aria-label="Travelers"><option>2 travelers</option><option>1 traveler</option><option>3 travelers</option><option>4+ travelers</option></select></label>
+        <button class="results-search-button" type="button" data-search-submit>Search</button>
+      </section>
+
+      <div class="chip-row results-chips" aria-label="Popular categories">
+        <button class="chip active" data-category-chip="all">All experiences</button>
+        <button class="chip" data-category-chip="water">On the water</button>
+        <button class="chip" data-category-chip="beach">Beach clubs</button>
+        <button class="chip" data-category-chip="tour">Island tours</button>
+        <button class="chip" data-category-chip="food">Food & drink</button>
+        <button class="chip" data-category-chip="events">Events</button>
+        <button class="chip" data-category-chip="wellness">Wellness</button>
+        <button class="chip" data-category-chip="guides">Guides</button>
+      </div>
+
+      <button class="mobile-filter-button" type="button" data-filter-toggle>☷ Filters & sort</button>
+      <div class="results-layout">
+        <aside class="results-sidebar" id="results-filters">
+          <div class="filter-heading"><h2>Filters</h2><button type="button" id="clear-filters">Clear all</button></div>
+          <fieldset><legend>Experience type</legend>
+            <label><input type="checkbox" data-filter-category value="water"> Water adventures</label>
+            <label><input type="checkbox" data-filter-category value="beach"> Beach clubs & day passes</label>
+            <label><input type="checkbox" data-filter-category value="tour"> Guided island tours</label>
+            <label><input type="checkbox" data-filter-category value="food"> Food & drink</label>
+            <label><input type="checkbox" data-filter-category value="events"> Events & nightlife</label>
+            <label><input type="checkbox" data-filter-category value="wellness"> Spa & wellness</label>
+            <label><input type="checkbox" data-filter-category value="guides"> Community guides</label>
+          </fieldset>
+          <fieldset><legend>Price per person</legend>
+            <label><input type="radio" name="result-price" value="9999" checked> Any price</label>
+            <label><input type="radio" name="result-price" value="75"> Under $75</label>
+            <label><input type="radio" name="result-price" value="150"> Under $150</label>
+            <label><input type="radio" name="result-price" value="250"> Under $250</label>
+          </fieldset>
+          <fieldset><legend>Duration</legend>
+            <label><input type="checkbox" data-filter-duration value="2"> Up to 2 hours</label>
+            <label><input type="checkbox" data-filter-duration value="4"> 2–4 hours</label>
+            <label><input type="checkbox" data-filter-duration value="8"> Half day</label>
+            <label><input type="checkbox" data-filter-duration value="24"> Full day</label>
+          </fieldset>
+          <fieldset><legend>Traveler rating</legend>
+            <label><input type="radio" name="result-rating" value="0" checked> Any rating</label>
+            <label><input type="radio" name="result-rating" value="4.5"> 4.5 ★ & up</label>
+            <label><input type="radio" name="result-rating" value="4.8"> 4.8 ★ & up</label>
+          </fieldset>
+          <fieldset><legend>Time of day</legend>
+            <label><input type="checkbox" data-filter-time value="morning"> Morning</label>
+            <label><input type="checkbox" data-filter-time value="afternoon"> Afternoon</label>
+            <label><input type="checkbox" data-filter-time value="evening"> Evening</label>
+          </fieldset>
+          <fieldset><legend>Voyara favorites</legend>
+            <label><input type="checkbox" data-filter-feature value="free-cancel"> Free cancellation</label>
+            <label><input type="checkbox" data-filter-feature value="instant"> Instant confirmation</label>
+            <label><input type="checkbox" data-filter-feature value="pickup"> Hotel pickup</label>
+            <label><input type="checkbox" data-filter-feature value="accessible"> Accessible experience</label>
+            <label><input type="checkbox" data-filter-feature value="local"> Local host</label>
+          </fieldset>
+        </aside>
+
+        <section class="results-content">
+          <div class="results-toolbar">
+            <div><strong id="result-count">12 results</strong><span>Handpicked for Nassau</span></div>
+            <label>Sort by <select id="sort-results"><option value="recommended">Recommended</option><option value="rating">Traveler rating</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="soonest">Events happening soon</option></select></label>
+          </div>
+          <div class="results-list" id="results-list">
+            <article class="result-card" data-filter-card data-category="water" data-island="nassau" data-price="145" data-duration="3.5" data-rating="4.9" data-time="morning afternoon" data-features="free-cancel instant pickup local" data-order="1">
+              <a class="result-image" href="activity-detail.html?id=turtle-cove" style="background-image:url('https://images.unsplash.com/photo-1544550285-f813152fb2fd?auto=format&fit=crop&w=900&q=82')"><span class="listing-badge">BEST SELLER</span></a>
+              <div class="result-info"><div class="result-kicker">Water adventure · Nassau</div><h2><a href="activity-detail.html?id=turtle-cove">Turtle Cove Snorkeling & Reef Cruise</a></h2><p>Swim vibrant reefs with a local marine guide, then unwind with refreshments aboard a small-group boat.</p><div class="result-facts"><span>◷ 3.5 hours</span><span>✓ Free cancellation</span><span>🚐 Pickup available</span></div><div class="result-rating"><strong>4.9 ★</strong><span>1,284 reviews</span><span class="community-pick">Community pick</span></div></div>
+              <div class="result-book"><button class="save-card" data-save="turtle-cove">♡</button><span>From</span><strong>$145</strong><small>per adult</small><a class="primary-action" href="activity-detail.html?id=turtle-cove">View availability</a></div>
+            </article>
+            <article class="result-card" data-filter-card data-category="beach" data-island="nassau" data-price="89" data-duration="8" data-rating="4.8" data-time="morning afternoon" data-features="free-cancel instant accessible" data-order="2">
+              <a class="result-image" href="activity-detail.html?id=turtle-cove" style="background-image:url('assets/guide-beach.png')"><span class="listing-badge coral">LIKELY TO SELL OUT</span></a>
+              <div class="result-info"><div class="result-kicker">Beach club · Cable Beach</div><h2><a href="activity-detail.html?id=turtle-cove">Azure Beach Club Day Pass</a></h2><p>Reserved lounger, infinity-pool access, welcome drink and a beachfront lunch credit for an effortless island day.</p><div class="result-facts"><span>◷ Full day</span><span>✓ Free cancellation</span><span>♿ Accessible</span></div><div class="result-rating"><strong>4.8 ★</strong><span>746 reviews</span></div></div>
+              <div class="result-book"><button class="save-card" data-save="azure-day-pass">♡</button><span>From</span><strong>$89</strong><small>per adult</small><a class="primary-action" href="activity-detail.html?id=turtle-cove">View availability</a></div>
+            </article>
+            <article class="result-card" data-filter-card data-category="tour" data-island="nassau" data-price="59" data-duration="2.5" data-rating="4.7" data-time="morning afternoon" data-features="free-cancel instant pickup local accessible" data-order="3">
+              <a class="result-image" href="activity-detail.html?id=nassau-city" style="background-image:url('https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=900&q=82')"></a>
+              <div class="result-info"><div class="result-kicker">Local tour · Downtown Nassau</div><h2><a href="activity-detail.html?id=nassau-city">Nassau Highlights with Tastings</a></h2><p>See the Queen’s Staircase, historic forts and colorful markets with stories and bites from a born-and-raised host.</p><div class="result-facts"><span>◷ 2.5 hours</span><span>✓ Free cancellation</span><span>Local host</span></div><div class="result-rating"><strong>4.7 ★</strong><span>932 reviews</span></div></div>
+              <div class="result-book"><button class="save-card" data-save="nassau-city">♡</button><span>From</span><strong>$59</strong><small>per adult</small><a class="primary-action" href="activity-detail.html?id=nassau-city">View availability</a></div>
+            </article>
+            <article class="result-card event-result" data-filter-card data-category="events" data-island="nassau" data-price="65" data-duration="4" data-rating="4.9" data-time="evening" data-features="instant accessible local" data-event-date="20260730" data-order="4">
+              <a class="result-image" href="events.html" style="background-image:url('https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=82')"><span class="event-date-badge"><b>30</b>JUL</span></a>
+              <div class="result-info"><div class="result-kicker">Live event · Nassau Harbour</div><h2><a href="events.html">Junkanoo Live on the Harbour</a></h2><p>A high-energy evening of drums, dancing, local food stalls and sunset harbour views.</p><div class="result-facts"><span>Thu, Jul 30 · 8:00 PM</span><span>Instant tickets</span><span>Local performers</span></div><div class="result-rating"><strong>4.9 ★</strong><span>387 attendees</span><span class="community-pick">Voyara event</span></div></div>
+              <div class="result-book"><button class="save-card" data-save="junkanoo-live">♡</button><span>Tickets from</span><strong>$65</strong><small>per person</small><a class="primary-action" href="events.html">Get tickets</a></div>
+            </article>
+            <article class="result-card" data-filter-card data-category="food" data-island="nassau" data-price="85" data-duration="2" data-rating="4.9" data-time="evening" data-features="free-cancel instant local accessible" data-order="5">
+              <a class="result-image" href="activity-detail.html?id=chef-table" style="background-image:url('assets/guide-food.png')"><span class="listing-badge">NEW</span></a>
+              <div class="result-info"><div class="result-kicker">Food & drink · Cable Beach</div><h2><a href="activity-detail.html?id=chef-table">Island Chef’s Table by the Water</a></h2><p>A five-course modern Bahamian tasting menu hosted by a celebrated local chef at a sunset waterfront table.</p><div class="result-facts"><span>◷ 2 hours</span><span>✓ Free cancellation</span><span>Local host</span></div><div class="result-rating"><strong>4.9 ★</strong><span>219 reviews</span></div></div>
+              <div class="result-book"><button class="save-card" data-save="chef-table">♡</button><span>From</span><strong>$85</strong><small>per adult</small><a class="primary-action" href="activity-detail.html?id=chef-table">View availability</a></div>
+            </article>
+            <article class="result-card" data-filter-card data-category="water" data-island="exuma" data-price="235" data-duration="8" data-rating="4.9" data-time="morning afternoon" data-features="free-cancel instant pickup local" data-order="6">
+              <a class="result-image" href="activity-detail.html?id=turtle-cove" style="background-image:url('assets/guide-water.png')"><span class="listing-badge coral">SPECIAL OFFER</span></a>
+              <div class="result-info"><div class="result-kicker">Boat day · Exuma</div><h2><a href="activity-detail.html?id=turtle-cove">Exuma Cays, Sandbars & Swimming Pigs</a></h2><p>Spend a full day island-hopping by speedboat with reef stops, a sandbar picnic and the famous swimming pigs.</p><div class="result-facts"><span>◷ 8 hours</span><span>✓ Free cancellation</span><span>🚐 Pickup included</span></div><div class="result-rating"><strong>4.9 ★</strong><span>1,106 reviews</span></div></div>
+              <div class="result-book"><button class="save-card" data-save="exuma-cays">♡</button><span>From</span><strong>$235</strong><small>per adult</small><a class="primary-action" href="activity-detail.html?id=turtle-cove">View availability</a></div>
+            </article>
+            <article class="result-card event-result" data-filter-card data-category="events" data-island="nassau" data-price="40" data-duration="5" data-rating="4.7" data-time="evening" data-features="instant local" data-event-date="20260802" data-order="7">
+              <a class="result-image" href="events.html" style="background-image:url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=82')"><span class="event-date-badge"><b>02</b>AUG</span></a>
+              <div class="result-info"><div class="result-kicker">Beach party · Cable Beach</div><h2><a href="events.html">Sunset Beach Session</a></h2><p>Resident DJs, barefoot dancing, beach bites and cocktails from golden hour into the night.</p><div class="result-facts"><span>Sun, Aug 2 · 5:30 PM</span><span>Instant tickets</span><span>18+</span></div><div class="result-rating"><strong>4.7 ★</strong><span>284 attendees</span></div></div>
+              <div class="result-book"><button class="save-card" data-save="sunset-session">♡</button><span>Tickets from</span><strong>$40</strong><small>per person</small><a class="primary-action" href="events.html">Get tickets</a></div>
+            </article>
+            <article class="result-card" data-filter-card data-category="wellness" data-island="nassau" data-price="160" data-duration="1.5" data-rating="4.8" data-time="morning afternoon" data-features="free-cancel instant accessible" data-order="8">
+              <a class="result-image" href="activity-detail.html?id=ocean-spa" style="background-image:url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=82')"></a>
+              <div class="result-info"><div class="result-kicker">Wellness · Paradise Island</div><h2><a href="activity-detail.html?id=ocean-spa">Oceanfront Spa Ritual</a></h2><p>A restorative massage, island salt scrub and quiet time on a private ocean terrace.</p><div class="result-facts"><span>◷ 90 minutes</span><span>✓ Free cancellation</span><span>♿ Accessible</span></div><div class="result-rating"><strong>4.8 ★</strong><span>408 reviews</span></div></div>
+              <div class="result-book"><button class="save-card" data-save="ocean-spa">♡</button><span>From</span><strong>$160</strong><small>per adult</small><a class="primary-action" href="activity-detail.html?id=ocean-spa">View availability</a></div>
+            </article>
+            <article class="result-card" data-filter-card data-category="tour" data-island="eleuthera" data-price="125" data-duration="6" data-rating="4.8" data-time="morning afternoon" data-features="free-cancel pickup local" data-order="9">
+              <a class="result-image" href="activity-detail.html?id=nassau-city" style="background-image:url('assets/guide-hidden.png')"></a>
+              <div class="result-info"><div class="result-kicker">Island tour · Eleuthera</div><h2><a href="activity-detail.html?id=nassau-city">Hidden Eleuthera with a Local Guide</a></h2><p>Pink sand, glass-window views, roadside conch and secluded coves on a laid-back private island drive.</p><div class="result-facts"><span>◷ 6 hours</span><span>✓ Free cancellation</span><span>🚐 Pickup included</span></div><div class="result-rating"><strong>4.8 ★</strong><span>172 reviews</span></div></div>
+              <div class="result-book"><button class="save-card" data-save="hidden-eleuthera">♡</button><span>From</span><strong>$125</strong><small>per adult</small><a class="primary-action" href="activity-detail.html?id=nassau-city">View availability</a></div>
+            </article>
+            <article class="result-card event-result" data-filter-card data-category="events" data-island="nassau" data-price="25" data-duration="3" data-rating="4.6" data-time="evening" data-features="instant accessible local" data-event-date="20260809" data-order="10">
+              <a class="result-image" href="events.html" style="background-image:url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=900&q=82')"><span class="event-date-badge"><b>09</b>AUG</span></a>
+              <div class="result-info"><div class="result-kicker">Culture · Downtown Nassau</div><h2><a href="events.html">Nassau Art Walk After Dark</a></h2><p>Open studios, street food, gallery talks and live performances through the historic downtown lanes.</p><div class="result-facts"><span>Sun, Aug 9 · 6:00 PM</span><span>Instant tickets</span><span>All ages</span></div><div class="result-rating"><strong>4.6 ★</strong><span>196 attendees</span></div></div>
+              <div class="result-book"><button class="save-card" data-save="art-walk">♡</button><span>Tickets from</span><strong>$25</strong><small>per person</small><a class="primary-action" href="events.html">Get tickets</a></div>
+            </article>
+            <article class="result-card" data-filter-card data-category="water" data-island="nassau" data-price="72" data-duration="2" data-rating="4.7" data-time="evening" data-features="free-cancel instant local" data-order="11">
+              <a class="result-image" href="activity-detail.html?id=turtle-cove" style="background-image:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=82')"></a>
+              <div class="result-info"><div class="result-kicker">Sailing · Nassau Harbour</div><h2><a href="activity-detail.html?id=turtle-cove">Small-Group Sunset Sail</a></h2><p>Watch Nassau turn gold from a relaxed catamaran with local bites, sparkling wine and island music.</p><div class="result-facts"><span>◷ 2 hours</span><span>✓ Free cancellation</span><span>Local crew</span></div><div class="result-rating"><strong>4.7 ★</strong><span>613 reviews</span></div></div>
+              <div class="result-book"><button class="save-card" data-save="sunset-sail">♡</button><span>From</span><strong>$72</strong><small>per adult</small><a class="primary-action" href="activity-detail.html?id=turtle-cove">View availability</a></div>
+            </article>
+            <article class="result-card event-result" data-filter-card data-category="events" data-island="exuma" data-price="80" data-duration="6" data-rating="4.8" data-time="evening" data-features="instant local" data-event-date="20260816" data-order="12">
+              <a class="result-image" href="events.html" style="background-image:url('https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=900&q=82')"><span class="event-date-badge"><b>16</b>AUG</span></a>
+              <div class="result-info"><div class="result-kicker">Music festival · George Town</div><h2><a href="events.html">Exuma Sound Weekend</a></h2><p>Two waterfront stages celebrating Bahamian music, emerging artists and sunset performances.</p><div class="result-facts"><span>Sun, Aug 16 · 7:00 PM</span><span>Instant tickets</span><span>Local artists</span></div><div class="result-rating"><strong>4.8 ★</strong><span>521 attendees</span></div></div>
+              <div class="result-book"><button class="save-card" data-save="exuma-live">♡</button><span>Tickets from</span><strong>$80</strong><small>per person</small><a class="primary-action" href="events.html">Get tickets</a></div>
+            </article>
+            <article class="result-card" data-filter-card data-category="guides" data-island="nassau" data-price="0" data-duration="2" data-rating="4.9" data-time="morning afternoon" data-features="local accessible" data-order="13">
+              <a class="result-image" href="nassau-food-guide.html" style="background-image:url('assets/guide-food.png')"><span class="listing-badge">GUIDE</span></a>
+              <div class="result-info"><div class="result-kicker">Community guide · Nassau</div><h2><a href="nassau-food-guide.html">5 Restaurants You Can’t Miss in Nassau</a></h2><p>Bahamas Eats shares five essential tables, from casual conch to waterfront dining.</p><div class="result-facts"><span>5 places</span><span>Local creator</span><span>Free guide</span></div><div class="result-rating"><strong>4.9 ★</strong><span>1.3K saves</span></div></div>
+              <div class="result-book"><button class="save-card" data-save="nassau-food-guide">♡</button><span>Community guide</span><strong>Free</strong><small>save for later</small><a class="primary-action" href="nassau-food-guide.html">Read guide</a></div>
+            </article>
+            <article class="result-card" data-filter-card data-category="guides" data-island="nassau" data-price="0" data-duration="4" data-rating="4.8" data-time="morning afternoon" data-features="local accessible" data-order="14">
+              <a class="result-image" href="rose-island-itinerary.html" style="background-image:url('assets/guide-beach.png')"><span class="listing-badge">GUIDE</span></a>
+              <div class="result-info"><div class="result-kicker">Community guide · Rose Island</div><h2><a href="rose-island-itinerary.html">The Perfect Day in Rose Island</a></h2><p>Travel Pete’s timing, snorkeling stops and practical boat-day advice in one route.</p><div class="result-facts"><span>Full-day route</span><span>Creator tested</span><span>Free guide</span></div><div class="result-rating"><strong>4.8 ★</strong><span>2.1K saves</span></div></div>
+              <div class="result-book"><button class="save-card" data-save="rose-island-guide">♡</button><span>Community guide</span><strong>Free</strong><small>save for later</small><a class="primary-action" href="rose-island-itinerary.html">Read guide</a></div>
+            </article>
+            <article class="result-card" data-filter-card data-category="guides" data-island="nassau" data-price="0" data-duration="8" data-rating="4.9" data-time="morning afternoon evening" data-features="local accessible" data-order="15">
+              <a class="result-image" href="girls-trip-itinerary.html" style="background-image:url('assets/guide-hidden.png')"><span class="listing-badge">GUIDE</span></a>
+              <div class="result-info"><div class="result-kicker">Community guide · Nassau</div><h2><a href="girls-trip-itinerary.html">Girls Trip Weekend in Nassau</a></h2><p>Island Girl’s complete weekend guide to beach clubs, dinners and nightlife.</p><div class="result-facts"><span>48-hour route</span><span>Local creator</span><span>Free guide</span></div><div class="result-rating"><strong>4.9 ★</strong><span>1.6K saves</span></div></div>
+              <div class="result-book"><button class="save-card" data-save="girls-trip-guide">♡</button><span>Community guide</span><strong>Free</strong><small>save for later</small><a class="primary-action" href="girls-trip-itinerary.html">Read guide</a></div>
+            </article>
+          </div>
+          <div class="empty-state" id="empty-state">No experiences match those filters. Try clearing one or two options.</div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <button class="prototype-notice" id="prototype-notice" hidden></button>
+  <footer class="prototype-footer"><div class="page-shell footer-grid"><div><h3>Voyara</h3><p>Real travelers. Real island inspiration.</p></div><div><h3>Explore</h3><a href="index.html">Discover</a><a href="events.html">Featured Events</a></div><div><h3>Plan</h3><a href="itineraries.html">Itineraries</a></div><div><h3>Community</h3><a href="voyagers.html">Voyagers</a></div></div></footer>
+</body>
+</html>

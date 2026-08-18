@@ -1,0 +1,67 @@
+/* Website-scale translation of the approved mobile app's Voyagers screen. */
+.voyager-social-main {
+  grid-template-columns: minmax(560px, 760px);
+  justify-content: center;
+  width: calc(100% - 238px);
+  padding-right: 36px;
+}
+
+.voyager-suggestions,
+.voyager-ads { display: none; }
+
+.voyager-feed-top {
+  height: auto;
+  min-height: 76px;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px 0;
+}
+
+.voyager-search { width: min(100%, 300px); }
+.feed-tabs.app-feed-tabs {
+  height: auto;
+  max-width: 100%;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.feed-tabs.app-feed-tabs::-webkit-scrollbar { display: none; }
+.feed-tabs.app-feed-tabs button {
+  flex: none;
+  padding: 9px 14px;
+  border: 1px solid #dce5e4;
+  border-radius: 999px;
+  background: #fff;
+  color: #5d7274;
+}
+.feed-tabs.app-feed-tabs button.active {
+  border-color: #062f35;
+  background: #062f35;
+  color: #fff;
+}
+.feed-tabs.app-feed-tabs button.active::after { display: none; }
+
+.voyager-feed { width: min(620px, 100%); margin-top: 22px; gap: 18px; }
+.social-post {
+  overflow: hidden;
+  padding-bottom: 0;
+  border: 1px solid #e0e8e7;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 8px 24px #07393d12;
+}
+.social-post-head { height: 66px; padding: 0 15px; }
+.social-post-image { border: 0; border-radius: 0; aspect-ratio: 16 / 10 !important; }
+.social-post-actions { padding: 10px 15px 5px; }
+.social-post-copy { padding: 0 15px 12px; }
+.social-comment-form { margin: 0 !important; padding: 11px 15px; border-top: 1px solid #edf1f0; }
+
+@media (max-width: 1180px) {
+  .voyager-social-main { width: calc(100% - 82px); }
+}
+
+@media (max-width: 650px) {
+  .voyager-social-main { width: 100%; padding-right: 0; }
+  .social-post { border-left: 0; border-right: 0; border-radius: 0; }
+  .social-post-image { aspect-ratio: 1 / 1 !important; }
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Prabh's Voyager Profile | Voyara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=favorites2">
+  <link rel="stylesheet" href="prototype.css?v=explore-modal1">
+  <script src="prototype.js?v=favorites2" defer></script>
+</head>
+<body class="prototype-page voyager-social-page voyager-profile-page">
+  <header class="header voyager-top-header">
+    <a class="brand" href="index.html"><img src="assets/voyara-logo.png" alt="Voyara"></a>
+    <button class="menu-button">☰</button>
+    <nav class="nav"><a href="index.html">Discover</a><a href="events.html">Featured Events</a><a href="itineraries.html">Itineraries</a><a class="active" href="voyagers.html">Voyagers</a></nav>
+    <div class="header-actions"><button class="line-icon-button" aria-label="Saved voyages"><span class="heart-icon">♡</span></button><a class="line-icon-button" href="itineraries.html" aria-label="Trips"><span class="bag-icon"></span></a><a class="avatar-button" href="voyager-profile.html"><img src="assets/header-avatar.png" alt="Profile"></a><button class="account-chevron">⌄</button></div>
+  </header>
+
+  <aside class="voyager-rail" aria-label="Voyara community navigation">
+    <nav>
+      <a href="index.html"><span class="rail-icon">⌂</span><span>Discover</span></a>
+      <a href="voyagers.html"><span class="rail-icon">▣</span><span>Voyagers</span></a>
+      <a href="voyagers.html"><span class="rail-icon">⌕</span><span>Search</span></a>
+      <button type="button" data-create-post><span class="rail-icon">＋</span><span>Create</span></button>
+      <a class="active" href="voyager-profile.html"><img class="rail-avatar" src="assets/header-avatar.png" alt=""><span>Profile</span></a>
+    </nav>
+    <button class="rail-more" type="button" data-notify="More community settings are coming soon."><span>☰</span><span>More</span></button>
+  </aside>
+
+  <main class="voyager-profile-main">
+    <section class="profile-overview">
+      <div class="profile-photo-wrap"><img src="assets/header-avatar.png" alt="Prabh's profile photo"><button data-notify="Profile note editing will be added in the next prototype.">Add a note…</button></div>
+      <div class="profile-details">
+        <div class="profile-name-row"><h1>prabh.voyages</h1><button aria-label="Profile settings" data-notify="Profile settings opened.">⚙</button></div>
+        <p class="profile-display-name">Prabh</p>
+        <div class="profile-stats"><button><strong>6</strong> voyages</button><button data-notify="Follower list opened."><strong>698</strong> followers</button><button data-notify="Following list opened."><strong>531</strong> following</button></div>
+        <div class="profile-bio"><strong>Traveler · Creator</strong><span>Toronto ↔ The Bahamas</span><p>Finding the best island days, local tables and sunset views. ✈️</p><a href="itineraries.html">voyara.com/prabh-voyages</a></div>
+        <div class="profile-islandly-status"><span>✦</span><div><strong>Voyara Castaway</strong><small>385 stars · 115 to Explorer status</small></div><a href="itineraries.html">View voyages</a></div>
+      </div>
+    </section>
+
+    <div class="profile-actions"><button data-edit-profile>Edit profile</button><button data-view-archive>View archive</button></div>
+
+    <section class="profile-content">
+      <div class="profile-tabs" role="tablist"><button class="active" data-profile-tab="posts">▦ <span>Voyages</span></button><button data-profile-tab="saved"><i class="profile-bookmark-icon" aria-hidden="true"></i><span>Saved</span></button><button data-profile-tab="tagged">▣ <span>Tagged</span></button></div>
+      <div class="profile-panel active" data-profile-panel="posts">
+        <div class="profile-post-grid">
+          <button style="background-image:url('https://images.unsplash.com/photo-1544550285-f813152fb2fd?auto=format&fit=crop&w=700&q=84')" data-profile-post><span>♥ 314&nbsp;&nbsp; ◯ 28</span></button>
+          <button style="background-image:url('assets/guide-beach.png')" data-profile-post><span>♥ 226&nbsp;&nbsp; ◯ 19</span></button>
+          <button style="background-image:url('assets/guide-food.png')" data-profile-post><span>♥ 243&nbsp;&nbsp; ◯ 17</span></button>
+          <button style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=84')" data-profile-post><span>♥ 189&nbsp;&nbsp; ◯ 12</span></button>
+          <button style="background-image:url('assets/guide-hidden.png')" data-profile-post><span>♥ 176&nbsp;&nbsp; ◯ 21</span></button>
+          <button style="background-image:url('https://images.unsplash.com/photo-1519671282429-b44660ead0a7?auto=format&fit=crop&w=700&q=84')" data-profile-post><span>♥ 154&nbsp;&nbsp; ◯ 9</span></button>
+        </div>
+      </div>
+      <div class="profile-panel" data-profile-panel="saved"><div class="profile-empty"><span><i class="profile-bookmark-icon large" aria-hidden="true"></i></span><h2>Your saved island inspiration</h2><p>Voyages and guides you save from Voyagers will appear here.</p><a href="voyagers.html">Explore the community</a></div></div>
+      <div class="profile-panel" data-profile-panel="tagged"><div class="profile-empty"><span>▣</span><h2>Voyages featuring you</h2><p>When Voyagers tag you, those voyages will appear here.</p></div></div>
+    </section>
+  </main>
+
+  <nav class="voyager-mobile-nav" aria-label="Mobile navigation"><a href="index.html">⌂</a><a href="voyagers.html">▣</a><button data-create-post>＋</button><a href="events.html">◇</a><a class="active" href="voyager-profile.html"><img src="assets/header-avatar.png" alt="Profile"></a></nav>
+
+  <div class="modal" id="edit-profile-modal"><div class="modal-card"><button class="modal-close" data-close-profile>×</button><p class="eyebrow">VOYAGER PROFILE</p><h2>Edit profile</h2><form class="prototype-form" id="edit-profile-form"><label>Display name<input name="displayName" value="Prabh"></label><label>Home base<input name="homeBase" value="Toronto ↔ The Bahamas"></label><label class="wide">Bio<textarea name="bio" rows="4">Finding the best island days, local tables and sunset views.</textarea></label><button class="primary-action wide">Save changes</button></form></div></div>
+  <div class="modal voyager-create-modal" id="create-post-modal"><div class="modal-card"><button class="modal-close" data-close-create>×</button><p class="eyebrow">NEW VOYAGE</p><h2>Share your voyage</h2><form class="prototype-form" id="create-post-form"><label>Photo<input name="photo" type="file" accept="image/*" required></label><label>Caption<textarea name="caption" rows="4" placeholder="Share a recommendation or island moment…" required></textarea></label><label>Location<input name="location" placeholder="Nassau, The Bahamas" required></label><label>Voyage type<select name="type"><option>Travel moment</option><option>Guide</option><option>Itinerary</option><option>Event</option></select></label><button class="primary-action wide">Share voyage</button></form></div></div>
+  <button class="prototype-notice" id="prototype-notice" hidden></button>
+</body>
+</html>

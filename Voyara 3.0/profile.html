@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Travel Profile | Voyara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=profile1"><link rel="stylesheet" href="account-profile.css?v=profile1">
+  <script src="profile.js?v=profile1" defer></script><script src="favorites.js?v=profile1" defer></script><script src="trip-cart.js?v=profile1" defer></script><script src="account-menu.js?v=profile1" defer></script>
+</head>
+<body class="account-profile-page">
+  <header class="header">
+    <a class="brand" href="index.html"><img src="assets/voyara-logo.png" alt="Voyara"></a><button class="menu-button">☰</button>
+    <nav class="nav"><a href="index.html">Discover</a><a href="events.html">Featured Events</a><a href="itineraries.html">Itineraries</a><a href="voyagers.html">Voyagers</a></nav>
+    <div class="header-actions"><button class="line-icon-button" aria-label="Favorites"><span class="heart-icon">♡</span></button><button class="line-icon-button" aria-label="Shopping bag"><span class="bag-icon"></span></button><button class="avatar-button" aria-label="Account menu"><img src="assets/header-avatar.png" alt=""></button><button class="account-chevron" aria-label="Open account menu">⌄</button></div>
+  </header>
+  <main class="account-profile-shell">
+    <section class="account-profile-intro">
+      <div class="profile-person"><img src="assets/header-avatar.png" alt="Prabh"><div><span>WELCOME BACK</span><h1>Prabh’s Voyara</h1><p>Your trips, rewards and island inspiration in one place.</p></div></div>
+      <div class="loyalty-card"><div><span>VOYARA REWARDS</span><h2>Navigator status</h2><p>2,450 points · 550 points to Explorer</p></div><strong>82%</strong><div class="loyalty-track"><i></i></div><small>Book one more island experience to unlock early access and 5% rewards.</small></div>
+    </section>
+
+    <section class="trip-summary-grid">
+      <article><span>UPCOMING</span><strong>2 trips</strong><small>Next: Rose Island · Saturday</small></article>
+      <article><span>PAST ADVENTURES</span><strong>7 trips</strong><small>Across 4 Bahamian islands</small></article>
+      <article><span>FAVOURITES</span><strong id="profile-favorite-count">0 saved</strong><small>Your personal island shortlist</small></article>
+      <article><span>REWARDS VALUE</span><strong>$24.50</strong><small>Available toward your next booking</small></article>
+    </section>
+
+    <section class="profile-section upcoming-section">
+      <div class="profile-section-heading"><div><span>YOUR PLANS</span><h2>Upcoming trips</h2></div><a href="itineraries.html">View all trips →</a></div>
+      <div class="upcoming-trip-grid">
+        <a class="upcoming-trip-card featured" href="activity-detail.html?id=rose-island-sail"><div class="trip-image" style="background-image:url('assets/voyara-hero-v2.png')"><span>IN 3 DAYS</span></div><div><small>Saturday · 9:30 AM</small><h3>Rose Island Golden-Hour Sail</h3><p>Nassau Harbour · 2 adults</p><b>View booking →</b></div></a>
+        <a class="upcoming-trip-card" href="activity-detail.html?id=sunset-beach-session"><div class="trip-image" style="background-image:url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=900&q=84')"><span>AUG 28</span></div><div><small>Friday · 5:30 PM</small><h3>Sunset Beach Session</h3><p>Cable Beach · 2 adults</p><b>View booking →</b></div></a>
+      </div>
+    </section>
+
+    <section class="profile-section carousel-section" data-profile-carousel>
+      <div class="profile-section-heading"><div><span>SAVED FOR LATER</span><h2>Your favourites</h2></div><div class="profile-carousel-controls"><button data-slide="-1" aria-label="Scroll favourites left">‹</button><button data-slide="1" aria-label="Scroll favourites right">›</button><a href="favorites.html">See all</a></div></div>
+      <div class="profile-card-track" id="profile-favorites-track"></div>
+    </section>
+
+    <section class="profile-section carousel-section" data-profile-carousel>
+      <div class="profile-section-heading"><div><span>PICKED FOR PRABH</span><h2>Recommended for you</h2><p>Based on your Rose Island sail, beach favourites and Nassau dining saves.</p></div><div class="profile-carousel-controls"><button data-slide="-1">‹</button><button data-slide="1">›</button></div></div>
+      <div class="profile-card-track">
+        <a class="profile-experience-card" href="activity-detail.html?id=exuma-cays"><div style="background-image:url('assets/guide-water.png')"><span>WATER</span></div><section><small>Exuma</small><h3>Exuma Cays & Swimming Pigs</h3><p>★ 4.98 · from $235</p></section></a>
+        <a class="profile-experience-card" href="activity-detail.html?id=chef-table"><div style="background-image:url('assets/guide-food.png')"><span>DINING</span></div><section><small>Nassau</small><h3>Island Chef’s Table by the Water</h3><p>★ 4.94 · from $85</p></section></a>
+        <a class="profile-experience-card" href="activity-detail.html?id=hidden-eleuthera"><div style="background-image:url('assets/guide-hidden.png')"><span>LOCAL PICK</span></div><section><small>Eleuthera</small><h3>Hidden Eleuthera with a Local</h3><p>★ 4.88 · from $125</p></section></a>
+        <a class="profile-experience-card" href="activity-detail.html?id=ocean-spa"><div style="background-image:url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=84')"><span>WELLNESS</span></div><section><small>Paradise Island</small><h3>Oceanfront Spa Ritual</h3><p>★ 4.84 · from $160</p></section></a>
+      </div>
+    </section>
+
+    <section class="profile-section past-trips-section"><div class="profile-section-heading"><div><span>YOUR TRAVEL STORY</span><h2>Past trips</h2></div></div><div class="past-trip-list">
+      <a href="activity-detail.html?id=turtle-cove"><time>JUN 18</time><img src="assets/guide-water.png" alt=""><div><h3>Turtle Cove Reef Cruise</h3><p>Nassau · 2 travelers</p></div><strong>Booked again by 78% →</strong></a>
+      <a href="activity-detail.html?id=azure-day-pass"><time>MAR 07</time><img src="assets/guide-beach.png" alt=""><div><h3>Azure Beach Club Day Pass</h3><p>Cable Beach · 2 travelers</p></div><strong>View experience →</strong></a>
+      <a href="activity-detail.html?id=nassau-highlights"><time>DEC 22</time><img src="assets/guide-food.png" alt=""><div><h3>Nassau Highlights & Tastings</h3><p>Downtown Nassau · 4 travelers</p></div><strong>View experience →</strong></a>
+    </div></section>
+  </main>
+</body></html>

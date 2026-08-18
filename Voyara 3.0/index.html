@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Voyara — Caribbean travel, curated by the people who live it." />
+    <title>Voyara | Real travelers. Real inspiration.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=homepage4" />
+    <script src="script.js?v=favorites2" defer></script>
+  </head>
+  <body class="home-page">
+    <header class="header">
+      <a class="brand" href="#top" aria-label="Voyara home"><img src="assets/voyara-logo.png" alt="Voyara" /></a>
+      <button class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="active" href="index.html">Discover</a><a href="events.html">Featured Events</a>
+        <a href="itineraries.html">Itineraries</a><a href="voyagers.html">Voyagers</a>
+      </nav>
+      <div class="header-actions">
+        <button class="line-icon-button" type="button" aria-label="Favorites"><span class="heart-icon" aria-hidden="true">♡</span></button>
+        <button class="line-icon-button" type="button" aria-label="Shopping bag"><span class="bag-icon" aria-hidden="true"></span></button>
+        <button class="avatar-button" type="button" aria-label="Account menu"><img src="assets/header-avatar.png" alt="" /></button>
+        <button class="account-chevron" type="button" aria-label="Open account menu">⌄</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <h1>Real travelers.<em>Real inspiration.</em></h1>
+          <p>Join the Voyagers community.<br />Share your journey and inspire others.</p>
+          <form class="search-bar" id="search-form">
+            <label><span class="field-icon">⌖</span><span><small>Where to?</small><select name="where"><option>Nassau, The Bahamas</option><option>Exuma, The Bahamas</option><option>Montego Bay, Jamaica</option><option>Bridgetown, Barbados</option></select></span></label>
+            <label><span class="field-icon">⌕</span><span><small>What are you looking for?</small><input name="interest" value="Beach clubs, boat tours, dining" /></span></label>
+            <label><span class="field-icon">□</span><span><small>When?</small><input name="when" type="date" aria-label="Travel date" /></span></label>
+            <button class="search-submit" type="submit" aria-label="Search experiences">→</button>
+          </form>
+          <a class="cruise-discovery-card" href="things-to-do.html?q=cruise" aria-label="Explore activities that fit your cruise port time">
+            <span class="cruise-discovery-icon" aria-hidden="true">⛴</span>
+            <span class="cruise-discovery-copy"><strong>Arriving by cruise?</strong><small>See activities that fit your port time</small></span>
+            <span class="cruise-discovery-arrow" aria-hidden="true">›</span>
+          </a>
+        </div>
+        <div class="hero-side-cards">
+          <aside class="home-weather-card" aria-label="Nassau weather">
+            <span class="weather-greeting">Good afternoon</span>
+            <h2><span aria-hidden="true">⌖</span> Nassau <small aria-hidden="true">⌄</small></h2>
+            <div class="weather-temperature"><strong>91°F</strong><span class="weather-symbol" aria-label="Partly cloudy">☼</span></div>
+            <p>Perfect beach weather today</p>
+            <button type="button" data-notice="The full Nassau forecast will be connected to live weather data.">See full forecast <span>→</span></button>
+          </aside>
+          <aside class="share-card next-adventure-card">
+            <span class="next-adventure-kicker">YOUR NEXT ADVENTURE</span>
+            <h2>Nothing booked <em>yet</em></h2>
+            <a href="things-to-do.html">Find your first Bahamas experience <span>→</span></a>
+          </aside>
+        </div>
+      </section>
+
+      <button class="notice" id="notice" type="button" hidden></button>
+
+      <section class="home-quick-actions" aria-label="Explore Voyara">
+        <a href="favorites.html"><span aria-hidden="true">♡</span><strong>Favourites</strong><small>Your saved island ideas</small></a>
+        <a href="personalized-itineraries.html"><span aria-hidden="true">◇</span><strong>Personalized Itineraries</strong><small>Plans made for your trip</small></a>
+        <a href="events.html"><span class="hot-events-icon" aria-hidden="true">🔥</span><strong>Hot Events</strong><small>Trending island moments</small></a>
+        <a href="profile.html"><span class="my-trips-icon" aria-hidden="true"><i class="bag-icon"></i></span><strong>My Trips</strong><small>Bookings and plans</small></a>
+      </section>
+
+      <section class="community-section" id="community">
+        <div class="section-title"><div><h2>From the Voyara community</h2><p>Real stories. Real recommendations.</p></div></div>
+        <div class="community-layout">
+          <div class="post-grid">
+            <article class="post-card" data-community-href="rose-island-itinerary.html" tabindex="0" role="link" style="background-image:url('https://images.unsplash.com/photo-1540202404-a2f29016b523?auto=format&fit=crop&w=1100&q=86')">
+              <div class="card-overlay"></div><span class="pill">ITINERARY</span>
+              <div class="post-copy"><p class="author"><span>T</span>Travel Pete <b>✓</b></p><h3>The Perfect Day in Rose Island</h3><p>Snorkeling, good vibes and crystal clear water — this is the Bahamas at its best.</p><div class="tags"><span>Boat Day</span><span>Snorkeling</span><span>Island Escape</span></div><div class="card-footer"><button class="post-card-heart heart" type="button" aria-label="Save The Perfect Day in Rose Island">♡</button></div></div>
+            </article>
+            <article class="post-card" data-community-href="nassau-food-guide.html" tabindex="0" role="link" style="background-image:url('https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=900&q=86')">
+              <div class="card-overlay"></div><span class="pill">GUIDE</span>
+              <div class="post-copy"><p class="author"><span>B</span>Bahamas Eats <b>✓</b></p><h3>5 Restaurants You Can’t Miss in Nassau</h3><p>From local favorites to fine dining — here’s where to eat in Nassau.</p><div class="tags"><span>Food</span><span>Local picks</span></div><div class="card-footer"><button class="post-card-heart heart" type="button" aria-label="Save 5 Restaurants You Can’t Miss in Nassau">♡</button></div></div>
+            </article>
+            <article class="post-card" data-community-href="girls-trip-itinerary.html" tabindex="0" role="link" style="background-image:url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=900&q=86')">
+              <div class="card-overlay"></div><span class="pill">ITINERARY</span>
+              <div class="post-copy"><p class="author"><span>I</span>Island Girl <b>✓</b></p><h3>Girls Trip Weekend in Nassau</h3><p>Beach clubs, boat days and unforgettable memories.</p><div class="tags"><span>Weekend</span><span>Nightlife</span></div><div class="card-footer"><button class="post-card-heart heart" type="button" aria-label="Save Girls Trip Weekend in Nassau">♡</button></div></div>
+            </article>
+          </div>
+          <aside class="guides" id="guides">
+            <div class="guides-heading"><h2>Top Guides by the community</h2></div>
+            <div class="guides-scroll" id="guides-scroll" tabindex="0" aria-label="Scrollable community guides">
+              <article><img src="assets/guide-beach.png" alt="" /><div><h3>Best Beach Clubs in Nassau</h3><p>by Travel Pete</p><small>● ● ●　2.1K saves</small></div><button class="heart" type="button" aria-label="Save guide">♡</button></article>
+              <article><img src="assets/guide-hidden.png" alt="" /><div><h3>Hidden Gems Only Locals Know</h3><p>by Island Girl</p><small>● ● ●　1.6K saves</small></div><button class="heart" type="button" aria-label="Save guide">♡</button></article>
+              <article><img src="assets/guide-food.png" alt="" /><div><h3>Best Food in Nassau</h3><p>by Bahamas Eats</p><small>● ● ●　1.3K saves</small></div><button class="heart" type="button" aria-label="Save guide">♡</button></article>
+              <article><img src="assets/guide-water.png" alt="" /><div><h3>Water Adventures in The Bahamas</h3><p>by OceanAddict</p><small>● ● ●　1.1K saves</small></div><button class="heart" type="button" aria-label="Save guide">♡</button></article>
+              <article><img src="assets/guide-beach.png" alt="" /><div><h3>A Perfect Paradise Island Day</h3><p>by Family Explorer</p><small>● ● ●　980 saves</small></div><button class="heart" type="button" aria-label="Save guide">♡</button></article>
+              <article><img src="assets/guide-food.png" alt="" /><div><h3>Where Locals Eat After Dark</h3><p>by Nassau Nights</p><small>● ● ●　875 saves</small></div><button class="heart" type="button" aria-label="Save guide">♡</button></article>
+              <article><img src="assets/guide-hidden.png" alt="" /><div><h3>Quiet Beaches Worth the Drive</h3><p>by Island Girl</p><small>● ● ●　740 saves</small></div><button class="heart" type="button" aria-label="Save guide">♡</button></article>
+            </div>
+            <div class="guide-scroll-actions"><button type="button" data-guide-scroll="-1" aria-label="Scroll guides up">↑</button><button type="button" data-guide-scroll="1" aria-label="Scroll guides down">↓</button></div>
+            <a class="outline-button" href="things-to-do.html?category=guides">Explore all guides　→</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="creators-section creator-carousel-section" id="creators" data-carousel>
+        <div class="section-title"><div><h2>Featured creators</h2><p>Meet the locals and travelers behind the best recommendations.</p></div><div class="carousel-controls"><button type="button" data-carousel-direction="-1" aria-label="Scroll creators left">‹</button><button type="button" data-carousel-direction="1" aria-label="Scroll creators right">›</button><a href="voyagers.html">Show all</a></div></div>
+        <div class="creator-row" data-carousel-track>
+          <article class="creator-card"><div class="creator-header"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=82" alt="" /><div><h3>Travel Pete <b>✓</b></h3><p>145K followers</p><small>Adventure Creator</small></div><button class="follow-button" type="button">Follow</button></div><div class="creator-gallery"><img src="https://images.unsplash.com/photo-1544550285-f813152fb2fd?auto=format&fit=crop&w=280&q=76" alt="" /><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=280&q=76" alt="" /><img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=280&q=76" alt="" /></div></article>
+          <article class="creator-card"><div class="creator-header"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&q=82" alt="" /><div><h3>Island Girl <b>✓</b></h3><p>98K followers</p><small>Beach &amp; Lifestyle</small></div><button class="follow-button" type="button">Follow</button></div><div class="creator-gallery"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=280&q=76" alt="" /><img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=280&q=76" alt="" /><img src="https://images.unsplash.com/photo-1544550285-f813152fb2fd?auto=format&fit=crop&w=280&q=76" alt="" /></div></article>
+          <article class="creator-card"><div class="creator-header"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=160&q=82" alt="" /><div><h3>Nassau Nights <b>✓</b></h3><p>76K followers</p><small>Nightlife &amp; Events</small></div><button class="follow-button" type="button">Follow</button></div><div class="creator-gallery"><img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=280&q=76" alt="" /><img src="https://images.unsplash.com/photo-1544550285-f813152fb2fd?auto=format&fit=crop&w=280&q=76" alt="" /><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=280&q=76" alt="" /></div></article>
+          <article class="creator-card"><div class="creator-header"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=82" alt="" /><div><h3>Bahamas Eats <b>✓</b></h3><p>63K followers</p><small>Food &amp; Culture</small></div><button class="follow-button" type="button">Follow</button></div><div class="creator-gallery"><img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=280&q=76" alt="" /><img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=280&q=76" alt="" /><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=280&q=76" alt="" /></div></article>
+          <article class="creator-card"><div class="creator-header"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=160&q=82" alt="" /><div><h3>Family Explorer <b>✓</b></h3><p>54K followers</p><small>Family Travel</small></div><button class="follow-button" type="button">Follow</button></div><div class="creator-gallery"><img src="https://images.unsplash.com/photo-1504150558240-0b4fd8946624?auto=format&fit=crop&w=280&q=76" alt="" /><img src="https://images.unsplash.com/photo-1544550285-f813152fb2fd?auto=format&fit=crop&w=280&q=76" alt="" /><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=280&q=76" alt="" /></div></article>
+          <article class="creator-card"><div class="creator-header"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=82" alt="" /><div><h3>Ocean Addict <b>✓</b></h3><p>41K followers</p><small>Diving &amp; Water Sports</small></div><button class="follow-button" type="button">Follow</button></div><div class="creator-gallery"><img src="assets/guide-water.png" alt="" /><img src="https://images.unsplash.com/photo-1544550285-f813152fb2fd?auto=format&fit=crop&w=280&q=76" alt="" /><img src="https://images.unsplash.com/photo-1540202404-a2f29016b523?auto=format&fit=crop&w=280&q=76" alt="" /></div></article>
+          <article class="creator-card"><div class="creator-header"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&q=82" alt="" /><div><h3>Eleuthera Elle <b>✓</b></h3><p>38K followers</p><small>Hidden Island Finds</small></div><button class="follow-button" type="button">Follow</button></div><div class="creator-gallery"><img src="assets/guide-hidden.png" alt="" /><img src="assets/guide-beach.png" alt="" /><img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=280&q=76" alt="" /></div></article>
+        </div>
+      </section>
+
+      <section class="home-discovery-section" id="spotlight">
+        <div class="discovery-heading"><div><span>VOYARA SPOTLIGHT</span><h2>One unforgettable island moment</h2><p>A limited community pick, selected for the story behind it.</p></div><a href="activity-detail.html?id=rose-island-sail">Explore spotlight →</a></div>
+        <article class="spotlight-feature"><div class="spotlight-image" style="background-image:url('https://images.unsplash.com/photo-1544550285-f813152fb2fd?auto=format&fit=crop&w=1500&q=88')"><span>SPOTLIGHT</span></div><div class="spotlight-copy"><p class="spotlight-kicker">HOSTED BY TRAVEL PETE · NASSAU</p><h3>Private Golden-Hour Sail to Rose Island</h3><p>Leave the harbour as the afternoon cools, snorkel a quiet reef and watch Nassau turn gold over a locally prepared dinner on deck.</p><div class="spotlight-meta"><span>★ 4.98 · 184 reviews</span><span>4.5 hours</span><span>Free cancellation</span></div><div class="spotlight-footer"><div><small>From</small><strong>$185</strong><small>/ guest</small></div><a href="activity-detail.html?id=rose-island-sail">View experience →</a></div></div></article>
+      </section>
+
+      <section class="home-discovery-section" id="weekly-itinerary">
+        <div class="discovery-heading"><div><span>ITINERARY OF THE WEEK</span><h2>The perfect Nassau weekend</h2><p>A complete, creator-built route you can customize and book.</p></div><a href="itineraries.html">View itinerary →</a></div>
+        <article class="weekly-itinerary-card"><div class="weekly-cover" style="background-image:url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1200&q=86')"><span>48 HOURS</span><div><small>CURATED BY ISLAND GIRL</small><h3>Sun, sea and Nassau after dark</h3></div></div><div class="weekly-route"><ol><li><b>Day 1 · 10:00 AM</b><span>Azure Beach Club arrival</span></li><li><b>Day 1 · 6:30 PM</b><span>Waterfront chef’s table</span></li><li><b>Day 1 · 9:00 PM</b><span>Junkanoo Harbour Nights</span></li><li><b>Day 2 · 9:30 AM</b><span>Rose Island boat day</span></li></ol><div class="weekly-book"><p><strong>4 experiences</strong><span>From $349 per traveler</span></p><a href="itineraries.html">Customize this itinerary</a></div></div></article>
+      </section>
+
+      <section class="home-discovery-section experience-carousel-section" id="popular-today" data-carousel>
+        <div class="discovery-heading"><div><span>EXPLORE NASSAU</span><h2>Top excursions</h2><p>The experiences Voyara travelers are booking and saving right now.</p></div><div class="carousel-controls"><button type="button" data-carousel-direction="-1" aria-label="Scroll popular experiences left">‹</button><button type="button" data-carousel-direction="1" aria-label="Scroll popular experiences right">›</button><a href="things-to-do.html">See all</a></div></div>
+        <div class="experience-carousel" data-carousel-track>
+          <article class="experience-card"><div class="experience-card-image" style="background-image:url('assets/guide-water.png')"><span>BEST SELLER</span><button class="experience-heart" aria-label="Save Exuma Cays voyage">♡</button></div><div class="experience-card-body"><h3>Exuma Cays & Swimming Pigs</h3><p>Exuma, The Bahamas</p><div><span>★ 4.98 · 1,106</span><strong>$235 / guest</strong></div></div></article>
+          <article class="experience-card"><div class="experience-card-image" style="background-image:url('assets/guide-beach.png')"><span>POPULAR</span><button class="experience-heart" aria-label="Save Azure Beach Club">♡</button></div><div class="experience-card-body"><h3>Azure Beach Club Day Pass</h3><p>Cable Beach, Nassau</p><div><span>★ 4.86 · 746</span><strong>$89 / guest</strong></div></div></article>
+          <article class="experience-card"><div class="experience-card-image" style="background-image:url('assets/guide-food.png')"><span>LOCAL PICK</span><button class="experience-heart" aria-label="Save Island Chef's Table">♡</button></div><div class="experience-card-body"><h3>Island Chef’s Table by the Water</h3><p>Nassau, The Bahamas</p><div><span>★ 4.94 · 219</span><strong>$85 / guest</strong></div></div></article>
+          <article class="experience-card"><div class="experience-card-image" style="background-image:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=700&q=84')"><button class="experience-heart" aria-label="Save sunset sail">♡</button></div><div class="experience-card-body"><h3>Small-Group Sunset Sail</h3><p>Nassau Harbour</p><div><span>★ 4.91 · 613</span><strong>$72 / guest</strong></div></div></article>
+          <article class="experience-card"><div class="experience-card-image" style="background-image:url('assets/guide-hidden.png')"><span>COMMUNITY PICK</span><button class="experience-heart" aria-label="Save Eleuthera tour">♡</button></div><div class="experience-card-body"><h3>Hidden Eleuthera with a Local</h3><p>Eleuthera, The Bahamas</p><div><span>★ 4.88 · 172</span><strong>$125 / guest</strong></div></div></article>
+          <article class="experience-card"><div class="experience-card-image" style="background-image:url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=700&q=84')"><button class="experience-heart" aria-label="Save oceanfront spa">♡</button></div><div class="experience-card-body"><h3>Oceanfront Spa Ritual</h3><p>Paradise Island</p><div><span>★ 4.84 · 408</span><strong>$160 / guest</strong></div></div></article>
+        </div>
+      </section>
+
+      <section class="home-discovery-section experience-carousel-section deals-section" id="last-minute" data-carousel>
+        <div class="discovery-heading"><div><span>BOOK SOON, SAVE MORE</span><h2>Last-minute deals</h2><p>Open spots and special rates for the next seven days.</p></div><div class="carousel-controls"><button type="button" data-carousel-direction="-1" aria-label="Scroll deals left">‹</button><button type="button" data-carousel-direction="1" aria-label="Scroll deals right">›</button><a href="things-to-do.html">Show all</a></div></div>
+        <div class="experience-carousel" data-carousel-track>
+          <article class="experience-card"><div class="experience-card-image" style="background-image:url('https://images.unsplash.com/photo-1544550285-f813152fb2fd?auto=format&fit=crop&w=700&q=84')"><span class="deal-badge">20% OFF · 3 LEFT</span><button class="experience-heart" aria-label="Save Turtle Cove">♡</button></div><div class="experience-card-body"><h3>Turtle Cove Reef Cruise</h3><p>Nassau · Tomorrow, 9:30 AM</p><div><span>★ 4.90 · 1,284</span><strong><s>$145</s> $116</strong></div></div></article>
+          <article class="experience-card"><div class="experience-card-image" style="background-image:url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=700&q=84')"><span class="deal-badge">TONIGHT · 6 LEFT</span><button class="experience-heart" aria-label="Save Sunset Beach Session">♡</button></div><div class="experience-card-body"><h3>Sunset Beach Session</h3><p>Cable Beach · Tonight, 5:30 PM</p><div><span>★ 4.76 · 284</span><strong>$32 / guest</strong></div></div></article>
+          <article class="experience-card"><div class="experience-card-image" style="background-image:url('https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=700&q=84')"><span class="deal-badge">15% OFF</span><button class="experience-heart" aria-label="Save Nassau highlights">♡</button></div><div class="experience-card-body"><h3>Nassau Highlights & Tastings</h3><p>Downtown Nassau · Friday</p><div><span>★ 4.79 · 932</span><strong><s>$59</s> $50</strong></div></div></article>
+          <article class="experience-card"><div class="experience-card-image" style="background-image:url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=700&q=84')"><span class="deal-badge">4 TICKETS LEFT</span><button class="experience-heart" aria-label="Save Art Walk">♡</button></div><div class="experience-card-body"><h3>Nassau Art Walk After Dark</h3><p>Downtown Nassau · Sunday</p><div><span>★ 4.67 · 196</span><strong>$25 / guest</strong></div></div></article>
+          <article class="experience-card"><div class="experience-card-image" style="background-image:url('https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=700&q=84')"><span class="deal-badge">SAVE $20</span><button class="experience-heart" aria-label="Save Exuma Sound Weekend">♡</button></div><div class="experience-card-body"><h3>Exuma Sound Weekend</h3><p>George Town · Saturday</p><div><span>★ 4.82 · 521</span><strong><s>$80</s> $60</strong></div></div></article>
+        </div>
+      </section>
+    </main>
+    <footer>© 2026 Voyara · Travel deeper. Share freely.</footer>
+  </body>
+</html>

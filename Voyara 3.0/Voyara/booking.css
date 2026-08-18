@@ -1,0 +1,37 @@
+.booking-prototype{background:#f6f7f6}
+.booking-banner{background:linear-gradient(90deg,#001a29ef,#004e5ac9),url("assets/voyara-hero-v2.png") center 47%/cover;color:#fff;padding:36px 0}
+.booking-banner h1{font:400 38px "Fraunces",serif;margin:0}.booking-banner h1 em{color:var(--cyan)}
+.booking-banner p{margin:7px 0 0;font-size:13px;color:#e8f0f2}
+.booking-stepper{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:25px 0 20px}
+.step-marker{border:0;background:transparent;color:#75828d;text-align:left;padding:0}
+.step-marker span{width:30px;height:30px;display:grid;place-items:center;border-radius:50%;border:1px solid #becbd0;background:#fff;font-weight:800;margin-bottom:7px}
+.step-marker strong{font-size:10px}.step-marker.active{color:var(--teal)}.step-marker.active span,.step-marker.complete span{background:var(--teal);border-color:var(--teal);color:#fff}
+.booking-layout{display:grid;grid-template-columns:minmax(0,1fr) 335px;gap:22px;align-items:start;padding-bottom:55px}
+.booking-panel,.booking-summary{background:#fff;border:1px solid #e0e6e8;border-radius:17px;box-shadow:0 7px 24px #00172f0b}
+.booking-panel{padding:26px}.booking-summary{padding:20px;position:sticky;top:18px}
+.booking-step{display:none}.booking-step.active{display:block}
+.booking-step h2,.booking-summary h2{font:400 27px "Fraunces",serif;margin:0 0 6px}
+.step-intro{color:#63717c;font-size:12px;margin:0 0 22px}
+.selected-experience{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:12px;border:1px solid #e0e6e8;border-radius:13px}
+.selected-experience img{width:150px;height:115px;object-fit:cover;border-radius:10px}
+.selected-experience h3{margin:4px 0;font-size:17px}.selected-experience p{font-size:11px;color:#63717c}
+.booking-fields{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:19px}
+.booking-fields label{font-size:10px;font-weight:700}.booking-fields input,.booking-fields select,.booking-fields textarea{width:100%;margin-top:6px;padding:11px;border:1px solid #d3dde0;border-radius:9px;background:#fff;color:var(--navy)}
+.booking-fields .full{grid-column:1/-1}
+.booking-age-notice{display:block;margin-top:7px;padding:7px 8px;border-radius:7px;background:#fff2e8;color:#984e20;font-size:8px}.booking-traveler-picker{margin-top:6px;padding:2px 10px;border:1px solid #d3dde0;border-radius:9px;background:#fff}.booking-traveler-row{min-height:44px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e8ecee}.booking-traveler-row:last-child{border-bottom:0}.booking-traveler-row>span b,.booking-traveler-row>span small{display:block}.booking-traveler-row>span b{font-size:10px}.booking-traveler-row>span small{color:#78858d;font-size:8px;font-weight:500}.booking-traveler-row>div{display:grid;grid-template-columns:26px 28px 26px;align-items:center;text-align:center}.booking-traveler-row button{width:26px;height:26px;padding:0;border:1px solid #ccd6da;border-radius:50%;background:#fff;color:var(--navy);font-size:15px}.booking-traveler-row>div strong{font-size:10px}.booking-traveler-row.disabled{opacity:.4}.booking-traveler-row.disabled button{cursor:not-allowed}
+.time-options{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.time-option{border:1px solid #becbd0;border-radius:10px;background:#fff;padding:11px 17px;font-size:11px}.time-option.selected{background:var(--teal);border-color:var(--teal);color:#fff}
+.availability-note{margin:15px 0;padding:12px;border-radius:10px;background:#eaf7f5;color:#075766;font-size:11px}
+.route-review{list-style:none;padding:0;margin:18px 0}.route-review li{display:grid;grid-template-columns:70px 1fr auto;gap:12px;padding:14px 0;border-bottom:1px solid #e3e8ea;font-size:11px}.route-review strong{font-size:12px}.route-review small{display:block;color:#6c7881;margin-top:4px}
+.addon-grid,.transport-grid,.payment-options{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}
+.choice-card{border:1px solid #d7e0e3;border-radius:12px;padding:14px;cursor:pointer;background:#fff}.choice-card:has(input:checked){border-color:var(--teal);box-shadow:0 0 0 2px #005a6816}.choice-card input{accent-color:var(--teal)}.choice-card strong{display:block;margin:7px 0 4px;font-size:12px}.choice-card small{color:#687680;font-size:10px;line-height:1.4}
+.step-actions{display:flex;justify-content:space-between;align-items:center;margin-top:25px;padding-top:18px;border-top:1px solid #e3e8ea}.back-step{border:1px solid #c7d2d6;background:#fff;color:var(--navy);border-radius:22px;padding:10px 16px;font-size:11px}.next-step{border:0;background:var(--teal);color:#fff;border-radius:22px;padding:11px 19px;font-size:11px;font-weight:700}
+.summary-experience{display:flex;gap:10px;margin:14px 0}.summary-experience img{width:72px;height:58px;border-radius:8px;object-fit:cover}.summary-experience strong{font-size:11px}.summary-experience small{display:block;font-size:9px;color:#687680;margin-top:4px}
+.summary-lines{border-top:1px solid #e1e6e8;margin-top:14px;padding-top:10px}.summary-lines div{display:flex;justify-content:space-between;font-size:11px;padding:6px 0}.summary-lines .grand{font-size:15px;font-weight:800;border-top:1px solid #e1e6e8;margin-top:5px;padding-top:12px}
+.secure-note{font-size:9px;color:#687680;line-height:1.5;margin:13px 0 0}
+.review-block{border:1px solid #dfe6e8;border-radius:12px;padding:15px;margin-bottom:12px}.review-block h3{font-size:12px;margin:0 0 8px}.review-block p{font-size:11px;line-height:1.55;margin:0;color:#596873}
+.prototype-warning{padding:12px;border-radius:10px;background:#fff6df;color:#795900;font-size:10px;margin:15px 0}
+.confirmation-wrap{padding:55px 0}.confirmation-card{width:min(900px,94%);margin:auto;background:#fff;border:1px solid #dfe6e8;border-radius:20px;overflow:hidden;box-shadow:0 16px 45px #00172f16}
+.confirmation-top{padding:35px;background:linear-gradient(130deg,#003e4a,#006f7d);color:#fff}.confirmation-top h1{font:400 37px "Fraunces",serif;margin:8px 0}.confirmation-number{display:inline-block;padding:8px 13px;border-radius:9px;background:#ffffff20;font-weight:800;letter-spacing:.08em}
+.confirmation-content{padding:28px}.confirmation-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.confirmation-stat{background:#f6f8f8;border-radius:10px;padding:13px}.confirmation-stat span{display:block;font-size:9px;color:#6a7781}.confirmation-stat strong{display:block;margin-top:6px;font-size:12px}
+.ticket{margin-top:20px;border:1px dashed #9eb1b8;border-radius:13px;padding:18px;display:grid;grid-template-columns:1fr 1fr;gap:18px}.ticket h2{font:400 23px "Fraunces",serif;margin:0 0 8px}.ticket dl{margin:0}.ticket dl div{display:grid;grid-template-columns:80px 1fr;padding:5px 0;font-size:10px}.ticket dt{color:#6c7881}.confirmation-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.confirmation-actions a,.confirmation-actions button{text-decoration:none}
+@media(max-width:800px){.booking-stepper{grid-template-columns:repeat(5,70px);overflow:auto}.booking-layout{grid-template-columns:1fr}.booking-summary{position:relative;top:auto;order:-1}.selected-experience{grid-template-columns:1fr}.selected-experience img{width:100%;height:180px}.addon-grid,.transport-grid,.payment-options,.booking-fields,.confirmation-grid{grid-template-columns:1fr}.booking-fields .full{grid-column:auto}.ticket{grid-template-columns:1fr}}

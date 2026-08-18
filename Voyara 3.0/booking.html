@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Book Your Experience | Voyara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=favorites2">
+  <link rel="stylesheet" href="prototype.css">
+  <link rel="stylesheet" href="booking.css?v=app-flow1">
+  <link rel="stylesheet" href="booking-app-flow.css?v=1">
+  <script src="booking.js?v=app-flow1" defer></script>
+</head>
+<body class="prototype-page booking-prototype">
+  <header class="header"><a class="brand" href="index.html"><img src="assets/voyara-logo.png" alt="Voyara"></a><button class="menu-button" aria-label="Toggle navigation">☰</button><nav class="nav"><a href="discover.html">Discover</a><a href="things-to-do.html">Things to Do</a><a href="events.html">Hot Events</a><a href="itineraries.html">Itineraries</a><a href="voyagers.html">Voyagers</a></nav><div class="header-actions"><button class="line-icon-button"><span class="heart-icon">♡</span></button><a class="line-icon-button" href="booking.html"><span class="bag-icon"></span></a><button class="avatar-button"><img src="assets/header-avatar.png" alt=""></button><button class="account-chevron">⌄</button></div></header>
+
+  <section class="booking-banner"><div class="page-shell"><p class="eyebrow">SECURE BOOKING PROTOTYPE</p><h1>Book your <em>island experience.</em></h1><p>The same clear booking sequence on web and in the Voyara app.</p></div></section>
+
+  <main class="page-shell app-booking-main">
+    <div class="booking-progress" aria-label="Booking progress"><span class="active">1. Date & time</span><span>2. Guests</span><span>3. Add-ons</span><span>4. Payment</span></div>
+    <div class="booking-layout">
+      <section class="booking-panel app-booking-panel">
+        <div class="selected-experience"><img id="booking-image" alt=""><div><span class="listing-badge" id="booking-category">EXPERIENCE</span><h2 id="booking-title"></h2><p id="booking-location"></p></div></div>
+
+        <section class="booking-card" aria-labelledby="date-heading"><p class="booking-card-label" id="date-heading">Select date</p><div class="booking-fields app-date-field"><label>Date<input id="booking-date" type="date" required></label></div><div class="time-options" id="time-options"><button class="time-option selected" data-time="9:00 AM">9:00 AM</button><button class="time-option" data-time="12:30 PM">12:30 PM</button><button class="time-option" data-time="3:00 PM">3:00 PM</button></div></section>
+
+        <section class="booking-card" aria-labelledby="guests-heading"><p class="booking-card-label" id="guests-heading">Guests</p><div class="app-guest-row" data-booking-traveler="adults"><span><strong>Adults</strong><small>18+ · <b id="adult-unit-price"></b> each</small></span><div><button type="button" data-booking-quantity="-1" aria-label="Remove adult">−</button><strong>2</strong><button type="button" data-booking-quantity="1" aria-label="Add adult">+</button></div></div><div class="app-guest-row" data-booking-traveler="kids"><span><strong>Children</strong><small>0–17 · <b id="child-unit-price"></b> each</small></span><div><button type="button" data-booking-quantity="-1" aria-label="Remove child">−</button><strong>0</strong><button type="button" data-booking-quantity="1" aria-label="Add child">+</button></div></div><p class="booking-age-note">Adults includes every traveler aged 18 or older.</p></section>
+
+        <section class="booking-card" aria-labelledby="addons-heading"><p class="booking-card-label" id="addons-heading">Add-ons</p><label class="app-addon selected"><input type="checkbox" name="addon" value="60" data-addon-name="Hotel pickup & drop-off" checked><span class="addon-check">✓</span><span><strong>Hotel pickup & drop-off</strong><small>Round trip from your hotel</small></span><b>$60</b></label><label class="app-addon"><input type="checkbox" name="addon" value="35" data-addon-name="GoPro photo package"><span class="addon-check">✓</span><span><strong>GoPro photo package</strong><small>All your underwater photos</small></span><b>$35</b></label></section>
+
+        <section class="booking-card price-card" aria-labelledby="price-heading"><p class="booking-card-label" id="price-heading">Price details</p><div class="app-price-lines"><div><span id="adult-price-label">Adults</span><strong id="adult-price-total">$0</strong></div><div id="child-price-row"><span id="child-price-label">Children</span><strong id="child-price-total">$0</strong></div><div><span>Add-ons</span><strong id="summary-addons">$60</strong></div><div><span>Service fee</span><strong>$14</strong></div><div class="grand"><span>Total</span><strong id="summary-total">$0</strong></div></div><p>All-in price · no hidden fees · free cancellation up to 24 hours</p></section>
+
+        <section class="booking-card" aria-labelledby="payment-heading"><p class="booking-card-label" id="payment-heading">Payment</p><label class="app-payment selected"><input type="radio" name="payment" value="Apple Pay" checked><span>●</span><strong>Apple Pay</strong><i>●</i></label><label class="app-payment"><input type="radio" name="payment" value="Prototype card"><span>▣</span><strong>•••• 4242</strong><i>●</i></label><p class="prototype-warning">Prototype only. No payment information is transmitted.</p></section>
+
+        <label class="booking-terms"><input id="terms-check" type="checkbox"> I agree to the prototype cancellation and partner policies.</label>
+        <div class="app-confirm-bar"><div><small>Total</small><strong id="confirm-total">$0</strong></div><button class="next-step" id="confirm-booking">Confirm & Pay</button></div>
+      </section>
+
+      <aside class="booking-summary"><p class="eyebrow">YOUR BOOKING</p><h2>Trip summary</h2><div class="summary-experience"><img id="summary-image" alt=""><div><strong id="summary-title"></strong><small id="summary-schedule"></small></div></div><div class="summary-lines"><div><span>Adults</span><strong id="summary-adults"></strong></div><div><span>Children</span><strong id="summary-children"></strong></div><div><span>Add-ons</span><strong id="side-addons"></strong></div><div class="grand"><span>Total</span><strong id="side-total"></strong></div></div><p class="secure-note">Secure Prototype booking · local partner · flexible cancellation</p></aside>
+    </div>
+  </main>
+</body>
+</html>
